@@ -15,11 +15,6 @@ contract MainBasicNft is Script {
             "BasicNft",
             block.chainid
         );
-        // if (mostRecentlyDeployment != address(0)) {
-        //     DeployOnContract(mostRecentlyDeployment);
-        // } else {
-        //     DeployNewContract();
-        // }
 
         mintNftOnContract(mostRecentlyDeployment);
     }
