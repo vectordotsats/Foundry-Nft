@@ -22,4 +22,17 @@ contract MoodTests is Test {
         moodNft.mintNft();
         console.log(moodNft.tokenURI(0));
     }
+
+    function flipTokenToSad() public {
+        vm.prank(USER);
+        moodNft.mintNft();
+
+        vm.prank(USER);
+        moodNft.flipMood(0);
+
+        assertEq(
+            keccak256(abi.encodePacked(SAD_SVG)),
+            keccak256(abi.encodePacked(moodNft.tokenURI(0)))
+        );
+    }
 }
