@@ -24,5 +24,3 @@ contract BasicNft is ERC721 {
         return s_tokenIdToUri[tokenId]; // Returns the token URI.
     }
 }
-
-// I still gotta understand this well
