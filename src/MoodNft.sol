@@ -79,3 +79,5 @@ contract MoodNft is ERC721 {
             );
     }
 }
+
+// FInanlizing this course 11 and will be moving to the defi course (12). Didn't totally get evrything but i'm very sure i learnt a lot from this lesson and i will always come back.
